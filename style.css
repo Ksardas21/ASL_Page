@@ -39,6 +39,10 @@ p{
     font-weight: 400;
     line-height: 24px;
 }
+h2{
+    font-size: 40px;
+    line-height: 38px;
+}
 header, .navigation, .nav-bar, .phone, main{
     display: flex;
     width: 100%;
@@ -100,18 +104,46 @@ header{
     text-align: center;
     border-radius: 56px;
 }
-.shape{
-    background-image: url(images/shape.svg);
+#shape{
     position: absolute;
-    margin-top: 400px;
     width: 100%;
-    height: 1080px;
     z-index: -10;
     background-repeat: no-repeat;
+}
+.shape0{
+    height: 1080px;
+    margin-top: 400px;
+    background-image: url(images/shape0.svg);
     background-position: 50vw -5vw;
+}
+.shape1{
+    background-image: url(images/shape1.svg);
+    height: 707.56px;
+    margin-top: 800px;
+    margin-right: 1800px;
+    background-position: 50vw 0vw;
+    transform: rotate(-162.46deg);
+}
+.shape2{
+    background-image: url(images/shape0.svg);
+    height: 732.39px;
+    background-position: 50vw 0vw;
+    margin-top: 3300px;
+    margin-right: 2950px;
+    transform: rotate(-38.42deg);
+}
+.shape3{
+    min-height: 732.39px;
+    margin-top: 3600px;
+    margin-left: 10%;
+    width: 90% !important;
+    background-image: url(images/shape0.svg);
+    background-position: 75vw 0vw;
+    
 }
 main{
     margin-top: 160px;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -134,17 +166,19 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    
 }
 .tape, .tape-circle, .tape h3{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 .tape{
     width: 380px;
     height: 398px;
     background: white;
-    border-radius: 30px;
+    border-radius: 10px;
     margin: 10px 10px;
     box-shadow: 0px 0px 30px 0px #0000001A;
     flex-direction: column;
@@ -182,13 +216,108 @@ main{
     width: 100%;
     transition: 0.2s ease-in-out;
 }
-#advantages{
-    margin-top: 120px;
-    max-height: 440px;
-    background: var(--colorPrimaryLighter);
+.wave{
+    position: absolute;
+    background-size: 2279px;
+    margin-top: -1000px;
+    min-height: 865px;
+    max-width: 2279px;
+    width: 100%;
+    background-image: url(images/wave.svg);
+    background-repeat: no-repeat;
+    z-index: -10;
 }
-#advantages h2{
-    font-size: 40px;
-    line-height: 38px;
+@media (max-width: 2279px){
+    .wave{
+        background-position: 50%;
+    }
+}
+.advantages{
+    margin-top: 120px;
     text-align: center;
+}
+.descriptions{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.advantage{
+    display: flex;
+    flex-direction: row;
+    width: 305px;
+    text-align: start;
+    margin-top: 50px;
+}
+.advantage h3{
+    margin-left: 40px;
+}
+.advantage img{
+    width: 70px;
+}
+.examples{
+    margin-top: 222px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+.examples h2{
+    max-width: 635px;
+    margin-bottom: 95px;
+}
+.example-photos{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+}
+.examples img{
+    width: 278px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.comparasion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.comparasion h2{
+    text-align: center;
+}
+.comparasion p{
+    max-width: 350px;
+    padding: 40px 0 40px;
+}
+.comparasion-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.action-buttons{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    width: 100%;
+    height: 60px;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+}
+.action-buttons img{
+    width: 30px;
+}
+.comparasion-line{
+    width: 100%;
+    height: 1px;
+    background: #E1E1E1;
 }
